@@ -13,12 +13,18 @@ config_version=5
 config/name="Design a main menu screen (start)"
 run/main_scene="res://MainMenu.tscn"
 config/features=PackedStringArray("4.2")
-config/icon="res://icon.png"
+config/icon="res://assets/main_menu/icon.png"
 
 [display]
 
 window/size/width=1366
 window/size/height=768
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "teal"
+}
 
 [gdnative]
 

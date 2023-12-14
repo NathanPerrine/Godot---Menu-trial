@@ -31,22 +31,29 @@ texture = ExtResource("1_lf5n4")
 
 [node name="MenuOptions" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 30
+alignment = 1
 
 [node name="Continue" type="TextureRect" parent="HBoxContainer/VBoxContainer/MenuOptions"]
 layout_mode = 2
 texture = ExtResource("2_j3mki")
+stretch_mode = 4
 
 [node name="NewGame" type="TextureRect" parent="HBoxContainer/VBoxContainer/MenuOptions"]
 layout_mode = 2
 texture = ExtResource("3_ndvyn")
+stretch_mode = 4
 
 [node name="Options" type="TextureRect" parent="HBoxContainer/VBoxContainer/MenuOptions"]
 layout_mode = 2
 texture = ExtResource("4_hdmyw")
+stretch_mode = 4
 
 [node name="Version" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 texture = ExtResource("5_ux7ff")
+stretch_mode = 4
 
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
 layout_mode = 2
@@ -54,3 +61,4 @@ layout_mode = 2
 [node name="Characters" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("6_1wxef")
+stretch_mode = 4
