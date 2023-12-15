@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://4wovyb0g0kjv"]
+
+[ext_resource type="PackedScene" uid="uid://ey20mo4in50x" path="res://Interface/Counter/counter.tscn" id="1_kt3pk"]
+
+[node name="BombsCounter" instance=ExtResource("1_kt3pk")]
+
+[node name="Icon" parent="." index="0"]
+offset_left = -73.0
+offset_top = -45.0
+offset_right = 7.0
+offset_bottom = 35.0

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://csopivkqgknxh"]
+
+[ext_resource type="PackedScene" uid="uid://bspj40kpg2v3l" path="res://Interface/Bar/bar.tscn" id="1_vvl6o"]
+[ext_resource type="Texture2D" uid="uid://dlwuc6chehjh2" path="res://assets/GUI/label_EP.png" id="2_q3v72"]
+[ext_resource type="Texture2D" uid="uid://dhb56bw5kjb8x" path="res://assets/GUI/energy_bar_bg.png" id="3_jgxca"]
+[ext_resource type="Texture2D" uid="uid://c87087e3ornev" path="res://assets/GUI/energy_bar_fill.png" id="4_w8mdg"]
+
+[node name="EnergyBar" instance=ExtResource("1_vvl6o")]
+offset_right = 412.0
+
+[node name="TextureRect" parent="NinePatchRect" index="0"]
+offset_left = 14.0
+offset_top = -14.0
+offset_right = 45.0
+offset_bottom = 14.0
+texture = ExtResource("2_q3v72")
+
+[node name="Label" parent="NinePatchRect" index="1"]
+offset_top = -23.0
+offset_bottom = 24.0
+
+[node name="TextureProgressBar" parent="." index="1"]
+texture_under = ExtResource("3_jgxca")
+texture_progress = ExtResource("4_w8mdg")

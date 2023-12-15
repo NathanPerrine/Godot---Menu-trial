@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyd2efltnb8oh"]
+
+[ext_resource type="PackedScene" uid="uid://bspj40kpg2v3l" path="res://Interface/Bar/bar.tscn" id="1_jcu4u"]
+
+[node name="LifeBar" instance=ExtResource("1_jcu4u")]

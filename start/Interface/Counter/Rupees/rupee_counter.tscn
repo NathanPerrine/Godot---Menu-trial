@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpplyb6jx6jnd"]
+
+[ext_resource type="PackedScene" uid="uid://ey20mo4in50x" path="res://Interface/Counter/counter.tscn" id="1_3ny3x"]
+[ext_resource type="Texture2D" uid="uid://c82kaxgj8u47y" path="res://assets/GUI/emeralds_icon.png" id="2_av0b8"]
+
+[node name="RupeeCounter" instance=ExtResource("1_3ny3x")]
+
+[node name="Icon" parent="." index="0"]
+texture = ExtResource("2_av0b8")

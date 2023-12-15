@@ -1,8 +1,8 @@
-NinePatchRect
-TextureProgressBar
 Label
 TextureRect
-MarginContainer
+NinePatchRect
+TextureProgressBar
 HBoxContainer
+MarginContainer
 VBoxContainer
 CenterContainer

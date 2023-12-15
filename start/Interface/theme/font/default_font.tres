@@ -1,0 +1,7 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://c6awvphp06ojd"]
+
+[ext_resource type="FontFile" uid="uid://vdicvtyebej6" path="res://Interface/theme/font/Comfortaa-Bold.ttf" id="1_4mis7"]
+
+[resource]
+base_font = ExtResource("1_4mis7")
+spacing_top = 5

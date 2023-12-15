@@ -29,3 +29,7 @@ folder_colors={
 [gdnative]
 
 singletons=[]
+
+[gui]
+
+theme/custom="res://Interface/default_theme.tres"

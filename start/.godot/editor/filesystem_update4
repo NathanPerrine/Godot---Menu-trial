@@ -1,1 +1,11 @@
 res://MainMenu.tscn
+res://Interface/counter.tscn
+res://Interface/default_theme.tres
+res://Interface/theme/font/default_font.tres
+res://Interface/Counter/Bombs/bombs_counter.tscn
+res://Interface/Counter/Rupees/rupee_counter.tscn
+res://Interface/GUI.tscn
+res://Interface/Counter/counter.tscn
+res://Interface/Bar/EnergyBar/energy_bar.tscn
+res://Interface/Bar/bar.tscn
+res://Interface/Bar/LifeBar/life_bar.tscn

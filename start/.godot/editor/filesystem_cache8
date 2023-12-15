@@ -1,6 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702504358
-GUI.tscn::PackedScene::4982218612712645998::1702504048::0::1::::<><>::
+::res://::1702589698
 MainMenu.tscn::PackedScene::3755501356118913473::1702418536::0::1::::<><>::uid://bfwpd0cwhioe5::::res://assets/main_menu/title.png<>uid://cyk2ne4qbtblg::::res://assets/main_menu/label_continue.png<>uid://c6jr5l2gn4hf0::::res://assets/main_menu/label_new_game.png<>uid://c1jlyorseuah3::::res://assets/main_menu/label_options.png<>uid://dchf3lmpv4dps::::res://assets/main_menu/version.png<>uid://fh00lr7nej1s::::res://assets/main_menu/characters.png
 ::res://assets/::1702503984
 ::res://assets/GUI/::1702504358
@@ -21,3 +20,16 @@ label_new_game.png::CompressedTexture2D::6968361302403624599::1505044414::170198
 label_options.png::CompressedTexture2D::6617042210148277098::1505044414::1701981212::1::::<><>::
 title.png::CompressedTexture2D::2783698641928416590::1505044415::1701981212::1::::<><>::
 version.png::CompressedTexture2D::7314444566832198580::1505044414::1701981212::1::::<><>::
+::res://Interface/::1702590577
+counter.tscn::PackedScene::331985097538209129::1702590523::0::1::::<><>::uid://c810a58vjkyac::::res://assets/GUI/label_HP_bg.png<>uid://b5p7kls6cd3vy::::res://assets/GUI/bombs_icon.png<>uid://bycdge7382s3y::::res://Interface/default_theme.tres
+default_theme.tres::Theme::4075274813100242432::1702590523::0::1::::<><>::uid://c6awvphp06ojd::::res://Interface/theme/font/default_font.tres
+GUI.tscn::PackedScene::4982218612712645998::1702504048::0::1::::<><>::
+::res://Interface/Counter/::1702590730
+::res://Interface/Counter/Bombs/::1702590591
+bombs_counter.tscn::PackedScene::2081781578913093495::1702590736::0::1::::<><>::uid://ey20mo4in50x::::res://Interface/counter.tscn
+::res://Interface/Counter/Rupees/::1702590730
+rupee_counter.tscn::PackedScene::5857350535094903977::1702590736::0::1::::<><>::uid://ey20mo4in50x::::res://Interface/counter.tscn<>uid://c82kaxgj8u47y::::res://assets/GUI/emeralds_icon.png
+::res://Interface/theme/::1702589418
+::res://Interface/theme/font/::1702590523
+Comfortaa-Bold.ttf::FontFile::1480649290628277609::1702589369::1702589698::1::::<><>::
+default_font.tres::FontVariation::6950069595058128789::1702590523::0::1::::<><>::uid://vdicvtyebej6::::res://Interface/theme/font/Comfortaa-Bold.ttf

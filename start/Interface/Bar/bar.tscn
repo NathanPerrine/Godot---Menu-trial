@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://bspj40kpg2v3l"]
+
+[ext_resource type="Texture2D" uid="uid://c810a58vjkyac" path="res://assets/GUI/label_HP_bg.png" id="1_2gid7"]
+[ext_resource type="Texture2D" uid="uid://diaj2id105nir" path="res://assets/GUI/label_HP.png" id="2_ngix2"]
+[ext_resource type="Theme" uid="uid://bycdge7382s3y" path="res://Interface/default_theme.tres" id="3_d46u8"]
+[ext_resource type="Texture2D" uid="uid://tf2ud5xrpr4x" path="res://assets/GUI/lifebar_bg.png" id="4_rn0tx"]
+[ext_resource type="Texture2D" uid="uid://bvsaq85tp1ass" path="res://assets/GUI/lifebar_fill.png" id="5_ork2n"]
+
+[node name="Bar" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+texture = ExtResource("1_2gid7")
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = -20.0
+offset_right = 56.0
+offset_bottom = 20.0
+grow_vertical = 2
+texture = ExtResource("2_ngix2")
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -93.0
+offset_top = -23.5
+offset_right = -8.0
+offset_bottom = 23.5
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("3_d46u8")
+text = "10/32
+"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 2
+value = 50.0
+texture_under = ExtResource("4_rn0tx")
+texture_progress = ExtResource("5_ork2n")
