@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cc8ooban4ggje"]
+[gd_scene load_steps=5 format=3 uid="uid://cc8ooban4ggje"]
 
-[ext_resource type="Texture2D" uid="uid://c810a58vjkyac" path="res://assets/GUI/label_HP_bg.png" id="1_u1s3f"]
+[ext_resource type="PackedScene" uid="uid://dyd2efltnb8oh" path="res://Interface/Bar/LifeBar/life_bar.tscn" id="1_vonqa"]
+[ext_resource type="PackedScene" uid="uid://csopivkqgknxh" path="res://Interface/Bar/EnergyBar/energy_bar.tscn" id="2_fs5t4"]
+[ext_resource type="PackedScene" uid="uid://4wovyb0g0kjv" path="res://Interface/Counter/Bombs/bombs_counter.tscn" id="3_b3w27"]
+[ext_resource type="PackedScene" uid="uid://cpplyb6jx6jnd" path="res://Interface/Counter/Rupees/rupee_counter.tscn" id="4_a1643"]
 
 [node name="GUI" type="Control"]
 layout_mode = 3
@@ -10,41 +13,28 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="Bars" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 97.0
+
+[node name="LifeBar" parent="Bars" instance=ExtResource("1_vonqa")]
+layout_mode = 2
+
+[node name="EnergyBar" parent="Bars" instance=ExtResource("2_fs5t4")]
+layout_mode = 2
+
+[node name="Counters" type="HBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 10
+anchors_preset = 1
+anchor_left = 1.0
 anchor_right = 1.0
-grow_horizontal = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="BombsCounter" parent="Counters" instance=ExtResource("3_b3w27")]
 layout_mode = 2
 
-[node name="Bars" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
-layout_mode = 2
-
-[node name="Bar" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Bars"]
-layout_mode = 2
-
-[node name="Count" type="MarginContainer" parent="MarginContainer/HBoxContainer/Bars/Bar"]
-layout_mode = 2
-
-[node name="Background" type="NinePatchRect" parent="MarginContainer/HBoxContainer/Bars/Bar/Count"]
-visible = false
-layout_mode = 2
-texture = ExtResource("1_u1s3f")
-
-[node name="Title" type="TextureRect" parent="MarginContainer/HBoxContainer/Bars/Bar/Count"]
-layout_mode = 2
-
-[node name="Number" type="Label" parent="MarginContainer/HBoxContainer/Bars/Bar/Count"]
-layout_mode = 2
-
-[node name="TextureProgressBar" type="TextureProgressBar" parent="MarginContainer/HBoxContainer/Bars/Bar/Count"]
-layout_mode = 2
-
-[node name="Counters" type="HBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="RupeeCounter" parent="Counters" instance=ExtResource("4_a1643")]
 layout_mode = 2

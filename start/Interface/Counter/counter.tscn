@@ -5,6 +5,7 @@
 [ext_resource type="Theme" uid="uid://bycdge7382s3y" path="res://Interface/default_theme.tres" id="3_8ohj6"]
 
 [node name="Counter" type="NinePatchRect"]
+custom_minimum_size = Vector2(120, 0)
 offset_right = 141.0
 offset_bottom = 58.0
 texture = ExtResource("1_g2645")
